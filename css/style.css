@@ -1,0 +1,54 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: wheat;
+  width: 90vh;
+  height: 90vh;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.container div {
+  background-color: royalblue;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  width: 28%;
+  height: calc(100%/7 - 20px);
+  text-align: center;
+  font-size: 7vh;
+  color: white;
+  cursor: pointer;
+}
+
+.container :nth-child(1) {
+  height: calc(100%/6 - 20px);
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  margin-top: 20px;
+  background-color: Black;
+  cursor: auto;
+}
+
+.container :nth-last-child(1), .container :nth-last-child(2) {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+/*# sourceMappingURL=style.css.map */
