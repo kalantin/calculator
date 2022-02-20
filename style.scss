@@ -35,9 +35,15 @@ body {
             padding: 10px;
         }
         .buttons{
-            button{
+            display: flex;
+            .btn{
             width: 30px;
             height: 30px;
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;
+            margin-left: 10px;
+            border-radius: 5px;
             font-size: 20px;
             cursor: pointer;
         }}

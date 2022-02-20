@@ -11,15 +11,14 @@
 		<div class="container">
             <h1>My first caltulator</h1>
 			<form action="">
-				<input class="inputA" type="number" />
-				<input class="inputB" type="number" />
+				<input class="inputA" type="text" onfocus="this.value=''" value="A" />
+				<input class="inputB" type="text" onfocus="this.value=''" value="B" />
                 <div class="buttons">
-                    <button class="btnPlus">+</button>
-                    <button class="btnMinus">-</button>
-                    <button class="btnMulti">*</button>
-                    <button class="btnSplit">/</button>
-                    <button class="btnSum">=</button>
-                    <button class="btnClear">C</button>
+                    <div class="btn btnPlus">+</div>
+                    <div class="btn btnMinus">-</div>
+                    <div class="btn btnMulti">*</div>
+                    <div class="btn btnSplit">/</div>
+                    <div class="btn btnClear">C</div>
                 </div>
                 <p>Result:</p>
                 <p class="result">Result</p>
