@@ -9,46 +9,76 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: wheat;
-  width: 90vh;
-  height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: grey;
+  width: 300px;
+  height: 300px;
   margin: 10px auto;
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid black;
 }
 
-.container div {
-  background-color: royalblue;
-  border-radius: 10px;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  width: 28%;
-  height: calc(100%/7 - 20px);
-  text-align: center;
-  font-size: 7vh;
+.container h1 {
+  text-transform: uppercase;
   color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.container form input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 20px;
+  padding: 10px;
+}
+
+.container form .buttons button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
   cursor: pointer;
 }
 
-.container :nth-child(1) {
-  height: calc(100%/6 - 20px);
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
-  margin-top: 20px;
-  background-color: Black;
-  cursor: auto;
+.container form p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 5px;
 }
 
-.container :nth-last-child(1), .container :nth-last-child(2) {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+.container form .result {
+  color: black;
+  text-align: center;
+  width: 50%;
+  height: 20px;
+  padding: 10px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
