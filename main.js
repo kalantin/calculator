@@ -4,32 +4,28 @@ const btnMulti = document.querySelector('.btnMulti');
 const btnSplit = document.querySelector('.btnSplit');
 const btnClear = document.querySelector('.btnClear');
 const result = document.querySelector('.result');
-const inputA = parseInt(document.querySelector('.inputA').value);
-const inputB = parseInt(document.querySelector('.inputB').value);
+const inputA = document.querySelector('.inputA')
+const inputB = document.querySelector('.inputB')
 let sum = 0;
 
 const plus = () => {
-	// const inputA = parseInt(document.querySelector('.inputA').value);
-	// const inputB = parseInt(document.querySelector('.inputB').value);
-	sum = inputA + inputB;
+
+	sum = parseInt(inputA.value) + parseInt(inputB.value);
 	result.textContent = sum;
 };
 const minus = () => {
-	// const inputA = parseInt(document.querySelector('.inputA').value);
-	// const inputB = parseInt(document.querySelector('.inputB').value);
-	sum = inputA - inputB;
+
+	sum = parseInt(inputA.value) - parseInt(inputB.value);
 	result.textContent = sum;
 };
 const split = () => {
-	// const inputA = parseInt(document.querySelector('.inputA').value);
-	// const inputB = parseInt(document.querySelector('.inputB').value);
-	sum = inputA / inputB;
+
+	sum = parseInt(inputA.value) / parseInt(inputB.value);
 	result.textContent = sum;
 };
 const multi = () => {
-	// const inputA = parseInt(document.querySelector('.inputA').value);
-	// const inputB = parseInt(document.querySelector('.inputB').value);
-	sum = inputA * inputB;
+
+	sum = parseInt(inputA.value) * parseInt(inputB.value);
 	result.textContent = sum;
 };
 const clear = () => {
